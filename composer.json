@@ -11,6 +11,7 @@
         "laravel/reverb": "^1.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
+        "laravolt/indonesia": "^0.35.0",
         "livewire/livewire": "^3.0"
     },
     "require-dev": {
