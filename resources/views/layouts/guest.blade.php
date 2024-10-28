@@ -18,10 +18,10 @@
         @livewireStyles
     </head>
     <body>
-
+        <div class="text-base-content">
+            <livewire:components.landing-navbar />
             {{ $slot }}
-
-
+        </div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const themeController = document.querySelector('.theme-controller');
