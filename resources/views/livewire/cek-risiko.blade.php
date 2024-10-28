@@ -1,5 +1,13 @@
 <div class="min-h-[100vh] overflow-hidden pb-40 pt-10 px-8">
-    <div class="flex justify-center items-center h-full">
+    <h1 class="text-5xl font-bold text-center">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
+            CEK RESIKO
+        </span>
+    </h1>
+    <p class="text-center mt-6">
+        Silahkan Mengisi Formulis Terlebih Dahulu Dibawah Ini
+    </p>
+    <div class="flex justify-center items-center h-full mt-8">
         <form class="w-3/5 space-y-4 space-x-8">
             <h2 class="text-2xl font-bold text-center">Formulir UMKM</h2>
             <div class="flex flex-col space-y-2">
@@ -27,7 +35,8 @@
                     </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary mt-4 float-right">Submit</button>
+            <button type="submit" class="btn btn-primary mt-4 float-right"><a
+                    href="{{ Route('form-pengisian') }}">Submit</a></button>
         </form>
     </div>
 </div>

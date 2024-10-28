@@ -14,7 +14,7 @@
                         <span class="motion-reduce:!opacity-100" style="opacity:1">Selamat Datang di</span>
                         <br>
                         <span
-                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">CyberSense
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">CyberSense
                             UMKM</span>
                     </h2>
                     <div class="h-10"></div>
@@ -53,7 +53,7 @@
                 <h1 class="text-5xl font-bold">Kenapa CyberSense UMKM?</h1>
                 <p class="py-6">
                     <span
-                        class="text-[clamp(2rem,8vw,2rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">CyberSense
+                        class="text-[clamp(2rem,8vw,2rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">CyberSense
                         UMKM</span> adalah solusi cerdas untuk membantu usaha kecil dan menengah menilai, memahami, dan
                     meningkatkan keamanan siber UMKM. Di era digital yang penuh dengan ancaman, kami hadir untuk
                     mendukung UMKM agar tetap aman dari serangan siber dan menjaga data berharga pelanggan dengan
@@ -81,7 +81,7 @@
                         </div>
                         <div class="timeline-start timeline-box">
                             <span
-                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">Penilaian
+                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">Penilaian
                                 Risiko Keamanan</span> <br>
                             Dapatkan gambaran lengkap tentang tingkat risiko keamanan bisnis Anda dalam beberapa langkah
                             mudah.
@@ -100,7 +100,7 @@
                         </div>
                         <div class="timeline-end timeline-box">
                             <span
-                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">Rekomendasi
+                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">Rekomendasi
                                 Keamanan</span> <br>
                             Berdasarkan hasil penilaian, kami menyediakan rekomendasi praktis yang sesuai dengan skala
                             bisnis dan anggaran Anda.
@@ -119,7 +119,7 @@
                         </div>
                         <div class="timeline-start timeline-box">
                             <span
-                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">Panduan
+                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">Panduan
                                 Pelatihan Keamanan untuk Karyawan</span> <br>
                             Tingkatkan kesadaran dan keterampilan keamanan siber bagi karyawan Anda melalui panduan dan
                             pelatihan yang mudah diakses.
@@ -145,7 +145,7 @@
                     <h2
                         class="font-title text-center text-[clamp(2rem,8vw,3rem)] font-black leading-none xl:text-center">
                         <span
-                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">CyberSense
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">CyberSense
                             UMKM</span> <br>
                         <span class="motion-reduce:!opacity-100" style="opacity:1">Perlindungan Mudah dan Terjangkau
                             <br> untuk Bisnis Anda</span>

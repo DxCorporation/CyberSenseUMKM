@@ -98,14 +98,15 @@
                                         </svg>
                                         <div class="flex flex-col items-start"><span
                                                 class="text-base-content/50 hidden text-xs font-normal md:block">Prev</span>
-                                            <span>Install</span></div>
+                                            <span>Install</span>
+                                        </div>
                                     </a></div>
                                 <div><a href="/docs/customize/"
                                         class="btn btn-neutral btn-sm md:btn-md gap-2 lg:gap-3">
                                         <div class="flex flex-col items-end"><span
                                                 class="text-neutral-content/50 hidden text-xs font-normal md:block">Next</span>
-                                            <span>Customize components</span></div> <svg
-                                            class="h-6 w-6 fill-current md:h-8 md:w-8"
+                                            <span>Customize components</span>
+                                        </div> <svg class="h-6 w-6 fill-current md:h-8 md:w-8"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24">
                                             <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z">
@@ -203,7 +204,8 @@
                                     class="card-title text-base-content text-xl contrast-200 [text-wrap:balance] sm:w-[250%] sm:text-2xl md:text-4xl lg:text-3xl xl:text-4xl">
                                     <span><span class="font-black">NEXUS</span> <br> <span
                                             class="font-light">Dashboard template <br> for React and
-                                            Next.js</span></span></h2>
+                                            Next.js</span></span>
+                                </h2>
                                 <div class="grow">
                                     <h2
                                         class="card-title text-sm font-light sm:w-[250%] sm:text-lg md:text-lg lg:text-lg xl:text-xl">
@@ -213,7 +215,8 @@
                                                 fill="#1AD1A5"></rect>
                                             <circle cx="207.5" cy="135" r="125" fill="white"></circle>
                                             <circle cx="207.5" cy="135" r="56" fill="#FF9903"></circle>
-                                        </svg> Available on daisyUI store</h2>
+                                        </svg> Available on daisyUI store
+                                    </h2>
                                 </div> <a class="btn btn-block btn-primary group" href="/store">More details <svg
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor"
@@ -258,7 +261,8 @@
                             <circle cx="207.5" cy="135" r="56" fill="#FF9903"></circle>
                         </svg>
                         <div class="font-title inline-flex text-lg md:text-2xl">daisyUI</div>
-                    </a> </div>
+                    </a>
+                </div>
                 <div class="h-4"></div>
                 <ul class="menu px-4 py-0">
                     <li>
@@ -276,7 +280,7 @@
                                     </svg></span> Docs</summary>
                             <ul>
                                 <li> <a href="/docs/install/" class="group    "> <span>Install</span> </a></li>
-                                <li> <a href="/docs/use/" class="group active  active "> <span>Use</span> </a></li>
+                                <li> <a href="/docs/use/" class="group active "> <span>Use</span> </a></li>
                                 <li> <a href="/docs/customize/" class="group    "> <span>Customize components</span>
                                     </a></li>
                                 <li> <a href="/docs/config/" class="group    "> <span>Config</span> </a></li>
@@ -567,7 +571,7 @@
                                         fill="none" stroke="currentColor" stroke-width="4"
                                         stroke-linejoin="bevel" />
                                 </svg></span> <span>Store</span> <span
-                                class="badge badge-sm font-mono text-opacity-70 bg-primary/10 text-[inherit] border-transparent uppercase font-sans font-bold">new</span>
+                                class="badge badge-sm text-opacity-70 bg-primary/10 text-[inherit] border-transparent uppercase font-sans font-bold">new</span>
                         </a></li>
                     <li> <a href="/blog/" class="group    "><span><svg xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -679,7 +683,8 @@
                 "type": "data",
                 "data": {
                     pagesThatDontNeedSidebar: ["/", "/components/", "/blog/", "/blog/*/", "/store/",
-                        "/resources/*/"],
+                        "/resources/*/"
+                    ],
                     pages: [{
                         name: "Docs",
                         icon: "\u003Csvg width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" class=\"text-orange-400 h-5 w-5\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\u003Cpath d=\"M5 7H16C20.4183 7 24 10.5817 24 15V42C24 38.6863 21.3137 36 18 36H5V7Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linejoin=\"bevel\"/>\u003Cpath d=\"M43 7H32C27.5817 7 24 10.5817 24 15V42C24 38.6863 26.6863 36 30 36H43V7Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linejoin=\"bevel\"/>\u003C/svg>",
