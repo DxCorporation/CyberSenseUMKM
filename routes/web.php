@@ -11,12 +11,7 @@ use App\Livewire\Petunjuk;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', LandingPage::class)->name('landing');
-
 Route::get('/cek-risiko', CekRisiko::class)->name('cek');
-Route::get('provinces', 'DependentDropdownController@provinces')->name('provinces');
-Route::get('cities', 'DependentDropdownController@cities')->name('cities');
-Route::get('districts', 'DependentDropdownController@districts')->name('districts');
-
 Route::get('/petunjuk', Petunjuk::class)->name('petunjuk');
 Route::get('/pengembang', Pengembang::class)->name('pengembang');
 Route::get('/gejala-solusi', GejalaSolusi::class)->name('gejala');
