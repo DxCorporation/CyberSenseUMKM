@@ -36,7 +36,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary mt-4 float-right"><a
-                    href="{{ Route('form-pengisian') }}">Submit</a></button>
+                    href="{{ Route('form-pengisian') }}" wire:navigate>Submit</a></button>
         </form>
     </div>
 </div>
