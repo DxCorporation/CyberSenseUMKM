@@ -66,12 +66,12 @@
         <div
             class="card w-full bg-white shadow-md rounded-lg p-6 mx-auto hover:shadow-lg transition-shadow duration-300">
             <figure class="flex justify-center mb-6">
-                <img src="https://via.placeholder.com/150" alt="Foto Mahasiswa"
+                <img src="{{ asset('parman.jpg') }}" alt="Foto Mahasiswa"
                     class="rounded-full w-32 h-32 border-4 border-yellow-400">
             </figure>
             <div class="card-body text-center">
-                <h2 class="text-lg font-semibold text-gray-800">Nama Mahasiswa 4</h2>
-                <p class="text-gray-500">NIM: 21006543</p>
+                <h2 class="text-lg font-semibold text-gray-800">Arianto Parman Sermae</h2>
+                <p class="text-gray-500">NIM: 21330018</p>
             </div>
         </div>
     </div>
