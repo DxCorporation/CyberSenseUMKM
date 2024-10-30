@@ -463,5 +463,31 @@
 
             </form>
         </div>
+
+        @if ($profile == true)
+        <div class="timeline-start timeline-box border border-warning">
+            <h3 class="text-center mb-4">
+                <span class="text-[clamp(1.5rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">Skala Bisnis</span>
+            </h3>
+            <ul>
+                <li class="mb-4">
+                    <h1 class="text-center"><strong>Usaha Mikro</strong></h1>
+                    Aset: Maksimal Rp 50 juta (tidak termasuk tanah dan bangunan tempat usaha).<br>
+                    Omzet tahunan: Maksimal Rp 300 juta.
+                </li>
+                <li class="mb-4">
+                    <h1 class="text-center"><strong>Usaha Kecil</strong></h1>
+                    Aset: Rp 50 juta hingga Rp 500 juta (tidak termasuk tanah dan bangunan tempat usaha).<br>
+                    Omzet tahunan: Rp 300 juta hingga Rp 2,5 miliar.
+                </li>
+                <li class="mb-4">
+                    <h1 class="text-center"><strong>Usaha Menengah</strong></h1>
+                    Aset: Rp 500 juta hingga Rp 10 miliar (tidak termasuk tanah dan bangunan tempat usaha).<br>
+                    Omzet tahunan: Rp 2,5 miliar hingga Rp 50 miliar.
+                </li>
+            </ul>
+        </div>
+
+        @endif
     </div>
 </div>
