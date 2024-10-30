@@ -370,20 +370,74 @@
                 @endif
 
                 @if ($sumberDaya == true)
-                    <h1>sumberDaya</h1>
+                <h1 class="text-center text-2xl font-bold mb-10">Sumber Daya Keamanan yang Tersedia
+                </h1>
+                <div class="space-y-6">
+                    <!-- Question 20 -->
+                    <div class="flex justify-between items-center w-full">
+                        <span class="w-4/5 border-b border-gray-300 p-2">Tidak ada budget untuk keamanan siber</span>
+                        <div class="w-1/5 flex justify-start ml-4">
+                            <label class="flex items-center space-x-2 mr-6">
+                                <input type="radio" name="q20" value="ya"
+                                    class="radio radio-primary" />
+                                <span>Ya</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="radio" name="q20" value="tidak"
+                                    class="radio radio-primary" />
+                                <span>Tidak</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 21 -->
+                    <div class="flex justify-between items-center w-full">
+                        <span class="w-4/5 border-b border-gray-300 p-2">Jumlah personel IT < 1	</span>
+                        <div class="w-1/5 flex justify-start ml-4">
+                            <label class="flex items-center space-x-2 mr-6">
+                                <input type="radio" name="q21" value="ya"
+                                    class="radio radio-primary" />
+                                <span>Ya</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="radio" name="q21" value="tidak"
+                                    class="radio radio-primary" />
+                                <span>Tidak</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
                 @endif
 
                 @if ($profile == false)
                     <div class="flex justify-between w-full mt-6">
                         <button class="btn btn-secondary" wire:click="back" wire:navigate>
-                            Back
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                            </svg>
-
+                            </svg>Back
                         </button>
+
+                        <ul class="steps">
+                            <li class="step step-info"></li>
+                            <li class="step step-info"></li>
+                            <li class="step
+                            @if ($jenisData == true OR $keamanan == true OR $kebijakan == true OR $riwayat == true OR $sumberDaya == true) step-info @endif
+                            "></li>
+                            <li class="step
+                            @if ($keamanan == true OR $kebijakan == true OR $riwayat == true OR $sumberDaya == true) step-info @endif
+                            "></li>
+                            <li class="step
+                            @if ($kebijakan == true OR $riwayat == true OR $sumberDaya == true) step-info @endif
+                            "></li>
+                            <li class="step
+                            @if ($riwayat == true OR $sumberDaya == true) step-info @endif
+                            "></li>
+                            <li class="step
+                            @if ($sumberDaya == true) step-info @endif
+                            "></li>
+                          </ul>
 
                         <button class="btn btn-primary" wire:click="next" wire:navigate>
                             Next

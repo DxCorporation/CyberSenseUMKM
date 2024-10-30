@@ -33,6 +33,9 @@ class FormPengisian extends Component
             $this->keamanan = true;
         } elseif ($this->keamanan == true) {
             $this->keamanan = false;
+            $this->kebijakan = true;
+        } elseif ($this->kebijakan == true) {
+            $this->kebijakan = false;
             $this->riwayat = true;
         } elseif ($this->riwayat == true) {
             $this->riwayat = false;
@@ -51,12 +54,15 @@ class FormPengisian extends Component
         } elseif ($this->keamanan) {
             $this->keamanan = false;
             $this->jenisData = true;
+        } elseif ($this->kebijakan) {
+            $this->kebijakan = false;
+            $this->keamanan = true;
         } elseif ($this->riwayat) {
             $this->riwayat = false;
-            $this->keamanan = true;
-        } elseif ($this->keamanan) {
-            $this->keamanan = false;
-            $this->sumberDaya;
+            $this->kebijakan = true;
+        } elseif ($this->sumberDaya) {
+            $this->sumberDaya = false;
+            $this->riwayat = true;
         }
     }
 
