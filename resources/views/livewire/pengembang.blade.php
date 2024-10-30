@@ -10,13 +10,13 @@
 
     <!-- Card Dosen -->
     <div class="flex justify-center mb-12 mt-10">
-        <div class="card w-96 bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-            <figure class="flex justify-center mb-6">
+        <div class="card bg-base-100 shadow-lg rounded-lg pt-6 hover:shadow-xl transition-shadow duration-300">
+            <figure class="flex justify-center mb-4">
                 <img src="{{ asset('bu marlin.jpeg') }}" alt="Foto Dosen"
                     class="rounded-full w-32 h-32 border-4 border-indigo-500">
             </figure>
             <div class="card-body text-center">
-                <h2 class="text-xl font-semibold text-gray-800">Yumarlin MZ, S.Kom., M.Pd., M.Kom.</h2>
+                <h2 class="text-xl font-semibold">Yumarlin MZ, S.Kom., M.Pd., M.Kom.</h2>
             </div>
         </div>
     </div>
@@ -25,52 +25,52 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
         <!-- Mahasiswa 1 -->
         <div
-            class="card w-full bg-white shadow-md rounded-lg p-6 mx-auto hover:shadow-lg transition-shadow duration-300">
-            <figure class="flex justify-center mb-6">
-                <img src="https://via.placeholder.com/150" alt="Foto Mahasiswa"
+            class="card w-full bg-base-100 shadow-xl rounded-lg pt-6 mx-auto hover:shadow-lg transition-shadow duration-300">
+            <figure class="flex justify-center mb-4">
+                <img src="{{ asset('aswin.jpg') }}" alt="Foto Mahasiswa"
                     class="rounded-full w-32 h-32 border-4 border-blue-400">
             </figure>
             <div class="card-body text-center">
-                <h2 class="text-lg font-semibold text-gray-800">Nama Mahasiswa 1</h2>
-                <p class="text-gray-500">NIM: 21001234</p>
+                <h2 class="text-lg font-semibold">Putranta Aswintama</h2>
+                <p class="text-gray-500">NIM: 21330001</p>
             </div>
         </div>
 
         <!-- Mahasiswa 2 -->
         <div
-            class="card w-full bg-white shadow-md rounded-lg p-6 mx-auto hover:shadow-lg transition-shadow duration-300">
-            <figure class="flex justify-center mb-6">
+            class="card w-full bg-base-100 shadow-xl rounded-lg pt-6 mx-auto hover:shadow-lg transition-shadow duration-300">
+            <figure class="flex justify-center mb-4">
                 <img src="https://via.placeholder.com/150" alt="Foto Mahasiswa"
                     class="rounded-full w-32 h-32 border-4 border-green-400">
             </figure>
             <div class="card-body text-center">
-                <h2 class="text-lg font-semibold text-gray-800">Nama Mahasiswa 2</h2>
-                <p class="text-gray-500">NIM: 21005678</p>
+                <h2 class="text-lg font-semibold">Ridwan</h2>
+                <p class="text-gray-500">NIM: 21330040</p>
             </div>
         </div>
 
         <!-- Mahasiswa 3 -->
         <div
-            class="card w-full bg-white shadow-md rounded-lg p-6 mx-auto hover:shadow-lg transition-shadow duration-300">
-            <figure class="flex justify-center mb-6">
+            class="card w-full bg-base-100 shadow-xl rounded-lg pt-6 mx-auto hover:shadow-lg transition-shadow duration-300">
+            <figure class="flex justify-center mb-4">
                 <img src="{{ asset('foto reihan.jpg') }}" alt="Foto Mahasiswa"
                     class="rounded-full w-32 h-32 border-4 border-red-400">
             </figure>
             <div class="card-body text-center">
-                <h2 class="text-lg font-semibold text-gray-800">Reihan Nanda Muliawan</h2>
+                <h2 class="text-lg font-semibold">Reihan Nanda Muliawan</h2>
                 <p class="text-gray-500">NIM: 20330014</p>
             </div>
         </div>
 
         <!-- Mahasiswa 4 -->
         <div
-            class="card w-full bg-white shadow-md rounded-lg p-6 mx-auto hover:shadow-lg transition-shadow duration-300">
-            <figure class="flex justify-center mb-6">
+            class="card w-full bg-base-100 shadow-xl rounded-lg pt-6 mx-auto hover:shadow-lg transition-shadow duration-300">
+            <figure class="flex justify-center mb-4">
                 <img src="{{ asset('parman.jpg') }}" alt="Foto Mahasiswa"
                     class="rounded-full w-32 h-32 border-4 border-yellow-400">
             </figure>
             <div class="card-body text-center">
-                <h2 class="text-lg font-semibold text-gray-800">Arianto Parman Sermae</h2>
+                <h2 class="text-lg font-semibold">Arianto Parman Sermae</h2>
                 <p class="text-gray-500">NIM: 21330018</p>
             </div>
         </div>
