@@ -186,9 +186,10 @@
         </li>
     </ul>
 
+    {{-- Petunjuk Mobile --}}
     <ul class="pt-10 lg:px-10 pb-10 lg:hidden">
         <li class="mb-4">
-            <div class="timeline-start timeline-box">
+            <div class="timeline-start timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">1.
                     Registrasi</span> <br>
@@ -197,7 +198,7 @@
 
         </li>
         <li class="mb-4">
-            <div class="timeline-end timeline-box">
+            <div class="timeline-end timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     2. Lengkapi Profil Bisnis Anda
@@ -207,7 +208,7 @@
             </div>
         </li>
         <li class="mb-4">
-            <div class="timeline-start timeline-box">
+            <div class="timeline-start timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     3. Masukkan Data Infrastruktur Teknologi
@@ -219,7 +220,7 @@
 
         </li>
         <li class="mb-4">
-            <div class="timeline-end timeline-box">
+            <div class="timeline-end timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     4. Identifikasi Jenis dan Sensitivitas Data
@@ -229,7 +230,7 @@
             </div>
         </li>
         <li class="mb-4">
-            <div class="timeline-start timeline-box">
+            <div class="timeline-start timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     5. Tentukan Protokol Keamanan yang Ada
@@ -241,7 +242,7 @@
             </div>
         </li>
         <li class="mb-4">
-            <div class="timeline-end timeline-box">
+            <div class="timeline-end timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     6. Lengkapi Data Kebijakan Keamanan dan Pelatihan Karyawan
@@ -251,7 +252,7 @@
         </li>
 
         <li class="mb-4">
-            <div class="timeline-start timeline-box">
+            <div class="timeline-start timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     7. Lihat Hasil Penilaian Risiko
@@ -263,7 +264,7 @@
         </li>
 
         <li class="mb-4">
-            <div class="timeline-end timeline-box">
+            <div class="timeline-end timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     8. Terapkan Rekomendasi Keamanan Siber
@@ -275,7 +276,7 @@
         </li>
 
         <li class="mb-4">
-            <div class="timeline-start timeline-box">
+            <div class="timeline-start timeline-box w-full">
                 <span
                     class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">
                     9. Pantau dan Perbarui Profil Secara Berkala

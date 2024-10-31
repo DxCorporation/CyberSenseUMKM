@@ -69,7 +69,7 @@
             <img src="{{ asset('cyber sense 3.png') }}" class="max-w-md hidden lg:block" width="400px" />
             <div>
                 <h1 class="text-5xl font-bold mb-4">Fitur Utama CyberSense UMKM</h1>
-                <ul class="timeline timeline-vertical">
+                <ul class="timeline timeline-vertical hidden lg:flex">
                     <li>
                         <div class="timeline-middle">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -125,6 +125,37 @@
                             pelatihan yang mudah diakses.
                         </div>
                         <hr />
+                    </li>
+                </ul>
+
+                {{-- Fitur Mobile --}}
+                <ul class="lg:hidden">
+                    <li class="mb-4 w-full">
+                        <div class="timeline-start timeline-box w-full">
+                            <span
+                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">Penilaian
+                                Risiko Keamanan</span> <br>
+                            Dapatkan gambaran lengkap tentang tingkat risiko keamanan bisnis Anda dalam beberapa langkah
+                            mudah.
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="timeline-end timeline-box w-full">
+                            <span
+                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">Rekomendasi
+                                Keamanan</span> <br>
+                            Berdasarkan hasil penilaian, kami menyediakan rekomendasi praktis yang sesuai dengan skala
+                            bisnis dan anggaran Anda.
+                        </div>
+                    </li>
+                    <li class="mb-4">
+                        <div class="timeline-start timeline-box w-full">
+                            <span
+                                class="text-[clamp(1.3rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">Panduan
+                                Pelatihan Keamanan untuk Karyawan</span> <br>
+                            Tingkatkan kesadaran dan keterampilan keamanan siber bagi karyawan Anda melalui panduan dan
+                            pelatihan yang mudah diakses.
+                        </div>
                     </li>
                 </ul>
             </div>
