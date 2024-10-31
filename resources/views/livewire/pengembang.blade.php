@@ -40,7 +40,7 @@
         <div
             class="card w-full bg-base-100 shadow-xl rounded-lg pt-6 mx-auto hover:shadow-lg transition-shadow duration-300">
             <figure class="flex justify-center mb-4">
-                <img src="https://via.placeholder.com/150" alt="Foto Mahasiswa"
+                <img src="{{ asset('image.png') }}" alt="Foto Mahasiswa"
                     class="rounded-full w-32 h-32 border-4 border-green-400">
             </figure>
             <div class="card-body text-center">

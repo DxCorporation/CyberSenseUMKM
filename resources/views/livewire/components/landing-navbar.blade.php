@@ -9,9 +9,31 @@
                 </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li><a>Petunjuk</a></li>
-                <li><a>Pengembang</a></li>
+                <li>
+                    <x-navbar-item url="{{ route('landing') }}" active="{{ request()->routeIs('landing') }}">
+                        Home
+                    </x-navbar-item>
+                </li>
+                <li>
+                    <x-navbar-item url="{{ route('cek') }}" active="{{ request()->routeIs('cek') }}">
+                        Cek Risiko
+                    </x-navbar-item>
+                </li>
+                <li>
+                    <x-navbar-item url="{{ route('petunjuk') }}" active="{{ request()->routeIs('petunjuk') }}">
+                        Petunjuk
+                    </x-navbar-item>
+                </li>
+                <li>
+                    <x-navbar-item url="{{ route('pengembang') }}" active="{{ request()->routeIs('pengembang') }}">
+                        Pengembang
+                    </x-navbar-item>
+                </li>
+                {{-- <li>
+                    <x-navbar-item url="{{ route('gejala') }}" active="{{ request()->routeIs('gejala') }}">
+                        Gejala & Solusi
+                    </x-navbar-item>
+                </li> --}}
             </ul>
         </div>
         <a data-sveltekit-preload-data href="/" aria-current="page" aria-label="daisyUI"
@@ -48,15 +70,15 @@
                     Pengembang
                 </x-navbar-item>
             </li>
-            <li>
+            {{-- <li>
                 <x-navbar-item url="{{ route('gejala') }}" active="{{ request()->routeIs('gejala') }}">
                     Gejala & Solusi
                 </x-navbar-item>
-            </li>
+            </li> --}}
         </ul>
     </div>
     <div class="navbar-end lg:me-5">
-        <label class="grid cursor-pointer place-items-center lg:me-5 me-2">
+        <label class="grid cursor-pointer place-items-center lg:me-5 me-2 hidden lg:flex">
             <input type="checkbox" value="synthwave"
                 class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1" />
             <svg class="stroke-base-100 fill-base-100 col-start-1 row-start-1" xmlns="http://www.w3.org/2000/svg"

@@ -48,7 +48,7 @@
 
     <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse lg:gap-20">
-            <img src="{{ asset('cyber sense 3.png') }}" class="max-w-md" width="400px" />
+            <img src="{{ asset('cyber sense 3.png') }}" class="max-w-md hidden lg:block" width="400px" />
             <div>
                 <h1 class="text-5xl font-bold">Kenapa CyberSense UMKM?</h1>
                 <p class="py-6">
@@ -66,7 +66,7 @@
 
     <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row lg:gap-20">
-            <img src="{{ asset('cyber sense 3.png') }}" class="max-w-md" width="400px" />
+            <img src="{{ asset('cyber sense 3.png') }}" class="max-w-md hidden lg:block" width="400px" />
             <div>
                 <h1 class="text-5xl font-bold mb-4">Fitur Utama CyberSense UMKM</h1>
                 <ul class="timeline timeline-vertical">
