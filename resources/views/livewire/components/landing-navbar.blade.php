@@ -29,6 +29,9 @@
                         Pengembang
                     </x-navbar-item>
                 </li>
+                <li>
+                    <a class="btn btn-primary btn-sm" href="{{ url('login') }}">Login</a>
+                </li>
                 {{-- <li>
                     <x-navbar-item url="{{ route('gejala') }}" active="{{ request()->routeIs('gejala') }}">
                         Gejala & Solusi
@@ -78,7 +81,7 @@
         </ul>
     </div>
     <div class="navbar-end lg:me-5">
-        <label class="grid cursor-pointer place-items-center lg:me-5 me-2 hidden lg:flex">
+        <label class="grid cursor-pointer place-items-center lg:me-5 me-2">
             <input type="checkbox" value="synthwave"
                 class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1" />
             <svg class="stroke-base-100 fill-base-100 col-start-1 row-start-1" xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +97,6 @@
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
         </label>
-        <a class="btn btn-primary btn-sm" href="{{ url('login') }}">Login</a>
+        <a class="btn btn-primary btn-sm hidden lg:flex" href="{{ url('login') }}">Login</a>
     </div>
 </div>

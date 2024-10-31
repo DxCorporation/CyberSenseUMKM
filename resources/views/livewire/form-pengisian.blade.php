@@ -1,15 +1,49 @@
 <div class="min-h-[100vh] lg:px-20 overflow-hidden pb-40 pt-10">
     <div class="relative bg-base-100 font-sans leading-normal tracking-normal w-full">
+        <div class="max-w-full">
+            <ul class="steps">
+                <li class="step step-info"></li>
+                <li class="step @if ($infrastruktur == true OR $jenisData == true or $keamanan == true or $kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif"></li>
+                <li
+                    class="step
+                @if ($jenisData == true or $keamanan == true or $kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif
+                ">
+                </li>
+                <li
+                    class="step
+                @if ($keamanan == true or $kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif
+                ">
+                </li>
+                <li
+                    class="step
+                @if ($kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif
+                ">
+                </li>
+                <li
+                    class="step
+                @if ($riwayat == true or $sumberDaya == true) step-info @endif
+                ">
+                </li>
+                <li
+                    class="step
+                @if ($sumberDaya == true) step-info @endif
+                ">
+                </li>
+            </ul>
+        </div>
         <div class="flex justify-center items-center h-full w-full">
-            <form class="w-full p-8">
+            <form class="w-full p-4 lg:p-8">
                 @if ($profile == true)
                     <h1 class="text-center text-2xl font-bold mb-10">Profil UMKM</h1>
                     <div class="space-y-6">
                         <!-- Question 1 -->
                         <h1 class="text-2 font-bold mb-4">Silahkan jawab semua pertanyaan sesuai dengan kondisi Anda.
                         </h1>
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-3/4 border-b border-gray-300 p-2">Jumlah Karyawan ≥ 20</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Jumlah Karyawan ≥ 20
+                            </div>
                             <div class="w-1/3 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q1" value="ya" class="radio radio-primary" />
@@ -23,9 +57,11 @@
                         </div>
 
                         <!-- Question 2 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-3/4 border-b border-gray-300 p-2">Karyawan yang Menggunakan Teknologi ≥
-                                50%</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Karyawan yang Menggunakan Teknologi ≥ 50%
+                            </div>
                             <div class="w-1/3 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q2" value="ya" class="radio radio-primary" />
@@ -39,9 +75,12 @@
                         </div>
 
                         <!-- Question 3 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-3/4 border-b border-gray-300 p-2">Skala Bisnis</span>
-                            <div class="w-1/3 flex justify-between ml-4">
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Skala Bisnis
+                            </div>
+                            <div class="lg:w-1/3 flex justify-between ml-4">
                                 <label class="flex items-center space-x-2">
                                     <input type="radio" name="q3" value="ya" class="radio radio-primary" />
                                     <span>Mikro</span>
@@ -58,9 +97,13 @@
                         </div>
 
                         <!-- Question 4 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-3/4 border-b border-gray-300 p-2">Jenis Industri</span>
-                            <div class="w-1/3 flex justify-between ml-4">
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Jenis Industri
+                            </div>
+
+                            <div class="lg:w-1/3 flex justify-between ml-4">
                                 <label class="flex items-center space-x-2">
                                     <input type="radio" name="q4" value="ya" class="radio radio-primary" />
                                     <span>Manufaktur</span>
@@ -83,9 +126,12 @@
                         <!-- Question 5 -->
                         <h1 class="text-2 font-bold mb-4">Silahkan jawab semua pertanyaan sesuai dengan kondisi Anda.
                         </h1>
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Sistem Operasi Windows tidak diperbarui
-                                dalam 6 bulan terakhir</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Sistem Operasi Windows tidak diperbarui dalam 6 bulan terakhir
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q5" value="ya" class="radio radio-primary" />
@@ -99,9 +145,12 @@
                         </div>
 
                         <!-- Question 6 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Menggunakan aplikasi berbasis web tanpa
-                                SSL</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Menggunakan aplikasi berbasis web tanpa SSL
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q6" value="ya" class="radio radio-primary" />
@@ -115,9 +164,12 @@
                         </div>
 
                         <!-- Question 7 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Penggunaan cloud tanpa enkripsi data
-                            </span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Penggunaan cloud tanpa enkripsi data
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q7" value="ya"
@@ -140,9 +192,12 @@
                         <!-- Question 8 -->
                         <h1 class="text-2 font-bold mb-4">Silahkan jawab semua pertanyaan sesuai dengan kondisi Anda.
                         </h1>
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Menyimpan data pelanggan seperti email
-                                atau nomor telepon</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Menyimpan data pelanggan seperti email atau nomor telepon
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q8" value="ya"
@@ -158,9 +213,12 @@
                         </div>
 
                         <!-- Question 9 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Menyimpan data keuangan seperti kartu
-                                kredit atau rekening bank</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Menyimpan data keuangan seperti kartu kredit atau rekening bank
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q9" value="ya"
@@ -176,9 +234,12 @@
                         </div>
 
                         <!-- Question 10 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Menyimpan data sensitif (misalnya, nomor
-                                identitas)
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Menyimpan data sensitif (misalnya, nomor identitas)
+                            </div>
+
                             </span>
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
@@ -195,10 +256,12 @@
                         </div>
 
                         <!-- Question 11 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Lokasi penyimpanan data hanya di server
-                                lokal tanpa backup
-                            </span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Lokasi penyimpanan data hanya di server lokal tanpa backup
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q11" value="ya"
@@ -219,8 +282,12 @@
                     <h1 class="text-center text-2xl font-bold mb-10">Protokol Keamanan yang Ada</h1>
                     <div class="space-y-6">
                         <!-- Question 12 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Menggunakan firewall</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Menggunakan Firewall
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q12" value="ya"
@@ -236,9 +303,12 @@
                         </div>
 
                         <!-- Question 13 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Menggunakan Two Factor Authentication
-                                (2FA) pada sistem login</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Menggunakan Two Factor Authentication (2FA) pada sistem login
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q13" value="ya"
@@ -260,8 +330,12 @@
                     </h1>
                     <div class="space-y-6">
                         <!-- Question 14 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Ada pelatihan keamanan siber </span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Ada pelatihan keamanan siber
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q14" value="ya"
@@ -277,8 +351,12 @@
                         </div>
 
                         <!-- Question 15 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Ada kebijakan kompleksitas password</span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Ada kebijakan kompleksitas password
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q15" value="ya"
@@ -293,9 +371,12 @@
                             </div>
                         </div>
                         <!-- Question 16 -->
-                        <div class="flex justify-between items-center w-full">
-                            <span class="w-4/5 border-b border-gray-300 p-2">Backup data dilakukan secara berkala
-                            </span>
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Backup data dilakukan secara berkala
+                            </div>
+
                             <div class="w-1/5 flex justify-start ml-4">
                                 <label class="flex items-center space-x-2 mr-6">
                                     <input type="radio" name="q16" value="ya"
@@ -313,100 +394,118 @@
                 @endif
 
                 @if ($riwayat == true)
-                <h1 class="text-center text-2xl font-bold mb-10">Riwayat Insiden Keamanan
-                </h1>
-                <div class="space-y-6">
-                    <!-- Question 17 -->
-                    <div class="flex justify-between items-center w-full">
-                        <span class="w-4/5 border-b border-gray-300 p-2">Pernah mengalami serangan phishing </span>
-                        <div class="w-1/5 flex justify-start ml-4">
-                            <label class="flex items-center space-x-2 mr-6">
-                                <input type="radio" name="q17" value="ya"
-                                    class="radio radio-primary" />
-                                <span>Ya</span>
-                            </label>
-                            <label class="flex items-center space-x-2">
-                                <input type="radio" name="q17" value="tidak"
-                                    class="radio radio-primary" />
-                                <span>Tidak</span>
-                            </label>
-                        </div>
-                    </div>
+                    <h1 class="text-center text-2xl font-bold mb-10">Riwayat Insiden Keamanan
+                    </h1>
+                    <div class="space-y-6">
+                        <!-- Question 17 -->
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Pernah mengalami serangan phishing
+                            </div>
 
-                    <!-- Question 18 -->
-                    <div class="flex justify-between items-center w-full">
-                        <span class="w-4/5 border-b border-gray-300 p-2">Pernah mengalami pencurian/kebocoran data</span>
-                        <div class="w-1/5 flex justify-start ml-4">
-                            <label class="flex items-center space-x-2 mr-6">
-                                <input type="radio" name="q18" value="ya"
-                                    class="radio radio-primary" />
-                                <span>Ya</span>
-                            </label>
-                            <label class="flex items-center space-x-2">
-                                <input type="radio" name="q18" value="tidak"
-                                    class="radio radio-primary" />
-                                <span>Tidak</span>
-                            </label>
+                            <div class="w-1/5 flex justify-start ml-4">
+                                <label class="flex items-center space-x-2 mr-6">
+                                    <input type="radio" name="q17" value="ya"
+                                        class="radio radio-primary" />
+                                    <span>Ya</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="q17" value="tidak"
+                                        class="radio radio-primary" />
+                                    <span>Tidak</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 18 -->
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Pernah mengalami pencurian/kebocoran data
+                            </div>
+
+                            <div class="w-1/5 flex justify-start ml-4">
+                                <label class="flex items-center space-x-2 mr-6">
+                                    <input type="radio" name="q18" value="ya"
+                                        class="radio radio-primary" />
+                                    <span>Ya</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="q18" value="tidak"
+                                        class="radio radio-primary" />
+                                    <span>Tidak</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Question 19 -->
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Pernah mengalami insiden keamanan lain
+                            </div>
+
+                            <div class="w-1/5 flex justify-start ml-4">
+                                <label class="flex items-center space-x-2 mr-6">
+                                    <input type="radio" name="q19" value="ya"
+                                        class="radio radio-primary" />
+                                    <span>Ya</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="q19" value="tidak"
+                                        class="radio radio-primary" />
+                                    <span>Tidak</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <!-- Question 19 -->
-                    <div class="flex justify-between items-center w-full">
-                        <span class="w-4/5 border-b border-gray-300 p-2">Pernah mengalami insiden keamanan lain
-                        </span>
-                        <div class="w-1/5 flex justify-start ml-4">
-                            <label class="flex items-center space-x-2 mr-6">
-                                <input type="radio" name="q19" value="ya"
-                                    class="radio radio-primary" />
-                                <span>Ya</span>
-                            </label>
-                            <label class="flex items-center space-x-2">
-                                <input type="radio" name="q19" value="tidak"
-                                    class="radio radio-primary" />
-                                <span>Tidak</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
                 @endif
 
                 @if ($sumberDaya == true)
-                <h1 class="text-center text-2xl font-bold mb-10">Sumber Daya Keamanan yang Tersedia
-                </h1>
-                <div class="space-y-6">
-                    <!-- Question 20 -->
-                    <div class="flex justify-between items-center w-full">
-                        <span class="w-4/5 border-b border-gray-300 p-2">Tidak ada budget untuk keamanan siber</span>
-                        <div class="w-1/5 flex justify-start ml-4">
-                            <label class="flex items-center space-x-2 mr-6">
-                                <input type="radio" name="q20" value="ya"
-                                    class="radio radio-primary" />
-                                <span>Ya</span>
-                            </label>
-                            <label class="flex items-center space-x-2">
-                                <input type="radio" name="q20" value="tidak"
-                                    class="radio radio-primary" />
-                                <span>Tidak</span>
-                            </label>
-                        </div>
-                    </div>
+                    <h1 class="text-center text-2xl font-bold mb-10">Sumber Daya Keamanan yang Tersedia
+                    </h1>
+                    <div class="space-y-6">
+                        <!-- Question 20 -->
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Tidak ada budget untuk keamanan siber
+                            </div>
 
-                    <!-- Question 21 -->
-                    <div class="flex justify-between items-center w-full">
-                        <span class="w-4/5 border-b border-gray-300 p-2">Jumlah personel IT < 1	</span>
-                        <div class="w-1/5 flex justify-start ml-4">
-                            <label class="flex items-center space-x-2 mr-6">
-                                <input type="radio" name="q21" value="ya"
-                                    class="radio radio-primary" />
-                                <span>Ya</span>
-                            </label>
-                            <label class="flex items-center space-x-2">
-                                <input type="radio" name="q21" value="tidak"
-                                    class="radio radio-primary" />
-                                <span>Tidak</span>
-                            </label>
+                            <div class="w-1/5 flex justify-start ml-4">
+                                <label class="flex items-center space-x-2 mr-6">
+                                    <input type="radio" name="q20" value="ya"
+                                        class="radio radio-primary" />
+                                    <span>Ya</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="q20" value="tidak"
+                                        class="radio radio-primary" />
+                                    <span>Tidak</span>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                </div>
+
+                        <!-- Question 21 -->
+                        <div
+                            class="lg:flex lg:justify-between items-center w-full border-b border-gray-300 pb-4 lg:border-none lg:pb-0">
+                            <div class="lg:w-3/4 w-full lg:border-b lg:border-gray-300 p-2">
+                                Jumlah personel IT < 1 </div>
+
+                                    <div class="w-1/5 flex justify-start ml-4">
+                                        <label class="flex items-center space-x-2 mr-6">
+                                            <input type="radio" name="q21" value="ya"
+                                                class="radio radio-primary" />
+                                            <span>Ya</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="radio" name="q21" value="tidak"
+                                                class="radio radio-primary" />
+                                            <span>Tidak</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
                 @endif
 
                 @if ($profile == false)
@@ -418,26 +517,6 @@
                                     d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                             </svg>Back
                         </button>
-
-                        <ul class="steps">
-                            <li class="step step-info"></li>
-                            <li class="step step-info"></li>
-                            <li class="step
-                            @if ($jenisData == true OR $keamanan == true OR $kebijakan == true OR $riwayat == true OR $sumberDaya == true) step-info @endif
-                            "></li>
-                            <li class="step
-                            @if ($keamanan == true OR $kebijakan == true OR $riwayat == true OR $sumberDaya == true) step-info @endif
-                            "></li>
-                            <li class="step
-                            @if ($kebijakan == true OR $riwayat == true OR $sumberDaya == true) step-info @endif
-                            "></li>
-                            <li class="step
-                            @if ($riwayat == true OR $sumberDaya == true) step-info @endif
-                            "></li>
-                            <li class="step
-                            @if ($sumberDaya == true) step-info @endif
-                            "></li>
-                          </ul>
 
                         <button class="btn btn-primary" wire:click="next" wire:navigate>
                             Next
@@ -465,29 +544,30 @@
         </div>
 
         @if ($profile == true)
-        <div class="timeline-start timeline-box border border-warning">
-            <h3 class="text-center mb-4">
-                <span class="text-[clamp(1.5rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">Skala Bisnis</span>
-            </h3>
-            <ul>
-                <li class="mb-4">
-                    <h1 class="text-center"><strong>Usaha Mikro</strong></h1>
-                    Aset: Maksimal Rp 50 juta (tidak termasuk tanah dan bangunan tempat usaha).<br>
-                    Omzet tahunan: Maksimal Rp 300 juta.
-                </li>
-                <li class="mb-4">
-                    <h1 class="text-center"><strong>Usaha Kecil</strong></h1>
-                    Aset: Rp 50 juta hingga Rp 500 juta (tidak termasuk tanah dan bangunan tempat usaha).<br>
-                    Omzet tahunan: Rp 300 juta hingga Rp 2,5 miliar.
-                </li>
-                <li class="mb-4">
-                    <h1 class="text-center"><strong>Usaha Menengah</strong></h1>
-                    Aset: Rp 500 juta hingga Rp 10 miliar (tidak termasuk tanah dan bangunan tempat usaha).<br>
-                    Omzet tahunan: Rp 2,5 miliar hingga Rp 50 miliar.
-                </li>
-            </ul>
-        </div>
-
+            <div class="timeline-start timeline-box border border-warning">
+                <h3 class="text-center mb-4">
+                    <span
+                        class="text-[clamp(1.5rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">Skala
+                        Bisnis</span>
+                </h3>
+                <ul>
+                    <li class="mb-4">
+                        <h1 class="text-center"><strong>Usaha Mikro</strong></h1>
+                        Aset: Maksimal Rp 50 juta (tidak termasuk tanah dan bangunan tempat usaha).<br>
+                        Omzet tahunan: Maksimal Rp 300 juta.
+                    </li>
+                    <li class="mb-4">
+                        <h1 class="text-center"><strong>Usaha Kecil</strong></h1>
+                        Aset: Rp 50 juta hingga Rp 500 juta (tidak termasuk tanah dan bangunan tempat usaha).<br>
+                        Omzet tahunan: Rp 300 juta hingga Rp 2,5 miliar.
+                    </li>
+                    <li class="mb-4">
+                        <h1 class="text-center"><strong>Usaha Menengah</strong></h1>
+                        Aset: Rp 500 juta hingga Rp 10 miliar (tidak termasuk tanah dan bangunan tempat usaha).<br>
+                        Omzet tahunan: Rp 2,5 miliar hingga Rp 50 miliar.
+                    </li>
+                </ul>
+            </div>
         @endif
     </div>
 </div>
