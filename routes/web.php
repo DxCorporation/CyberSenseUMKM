@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', LandingPage::class)->name('landing');
 Route::get('/cek-risiko', CekRisiko::class)->name('cek');
+Route::get('/get-kabupaten/{provinsiId}', [CekRisiko::class, 'getKabupaten']);
 Route::get('/form-pengisian', FormPengisian::class)->name('form-pengisian');
 Route::get('/petunjuk', Petunjuk::class)->name('petunjuk');
 Route::get('/pengembang', Pengembang::class)->name('pengembang');

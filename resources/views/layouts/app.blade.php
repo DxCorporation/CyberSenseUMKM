@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+    @stack('css')
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -21,15 +23,15 @@
 
 <body class="font-sans antialiased">
     <div class="text-base-content">
-            <livewire:components.navbar />
-            <div class="max-w-[100vw] px-6 pb-16 xl:pr-2">
-                <div class="flex flex-col-reverse justify-between gap-6 xl:flex-row">
-                    <div class="prose prose-sm md:prose-base w-full max-w-4xl flex-grow pt-10">
-                        {{ $slot }}
-                    </div>
+        <livewire:components.navbar />
+        <div class="max-w-[100vw] px-6 pb-16 xl:pr-2">
+            <div class="flex flex-col-reverse justify-between gap-6 xl:flex-row">
+                <div class="prose prose-sm md:prose-base w-full max-w-4xl flex-grow pt-10">
+                    {{ $slot }}
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script>
@@ -51,6 +53,8 @@
             });
         });
     </script>
+
+    @stack('js')
     @livewireScripts
 </body>
 

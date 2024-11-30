@@ -3,29 +3,30 @@
         <div class="max-w-full">
             <ul class="steps">
                 <li class="step step-info"></li>
-                <li class="step @if ($infrastruktur == true OR $jenisData == true or $keamanan == true or $kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif"></li>
-                <li
-                    class="step
+                <li class="step @if (
+                    $infrastruktur == true or
+                        $jenisData == true or
+                        $keamanan == true or
+                        $kebijakan == true or
+                        $riwayat == true or
+                        $sumberDaya == true) step-info @endif"></li>
+                <li class="step
                 @if ($jenisData == true or $keamanan == true or $kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif
                 ">
                 </li>
-                <li
-                    class="step
+                <li class="step
                 @if ($keamanan == true or $kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif
                 ">
                 </li>
-                <li
-                    class="step
+                <li class="step
                 @if ($kebijakan == true or $riwayat == true or $sumberDaya == true) step-info @endif
                 ">
                 </li>
-                <li
-                    class="step
+                <li class="step
                 @if ($riwayat == true or $sumberDaya == true) step-info @endif
                 ">
                 </li>
-                <li
-                    class="step
+                <li class="step
                 @if ($sumberDaya == true) step-info @endif
                 ">
                 </li>
@@ -157,7 +158,8 @@
                                     <span>Ya</span>
                                 </label>
                                 <label class="flex items-center space-x-2">
-                                    <input type="radio" name="q6" value="tidak" class="radio radio-primary" />
+                                    <input type="radio" name="q6" value="tidak"
+                                        class="radio radio-primary" />
                                     <span>Tidak</span>
                                 </label>
                             </div>
@@ -547,7 +549,7 @@
             <div class="timeline-start timeline-box border border-warning">
                 <h3 class="text-center mb-4">
                     <span
-                        class="text-[clamp(1.5rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 via-green-400 to-cyan-500">Skala
+                        class="text-[clamp(1.5rem,8vw,1rem)] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500  to-cyan-500">Skala
                         Bisnis</span>
                 </h3>
                 <ul>
